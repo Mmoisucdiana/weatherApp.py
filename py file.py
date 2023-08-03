@@ -241,4 +241,8 @@ Label(frame,image=box,bg="darkblue").place(x=600,y=10)
 Label(frame,image=box,bg="darkblue").place(x=700,y=10)
 Label(frame,image=box,bg="darkblue").place(x=800,y=10)
 
+
+temperature = data['main']['temp']
+temperature = round(temperature - 273.15, 2)  # Convert temperature from Kelvin to Celsius
+
 mainloop()
